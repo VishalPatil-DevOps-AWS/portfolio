@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vishal Patil | Cloud Engineer · AWS · DevOps</title>
+<meta name="description" content="Portfolio of Vishal Patil, an aspiring Cloud Engineer and BSc Computer Science graduate focused on AWS, Linux, Docker and DevOps.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+
+<header class="nav">
+  <a class="brand" href="#home" aria-label="Vishal Patil, home">VP</a>
+  <nav id="menu" aria-label="Primary">
+    <a href="#home">Home</a><a href="#about">About me</a><a href="#skills">Technical skills</a>
+    <a href="#projects">Projects</a><a href="#education">Education</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-tools">
+    <button id="theme" class="icon-btn" aria-label="Switch between light and dark theme">◐</button>
+    <button id="burger" class="icon-btn burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero wrap">
+  <div class="hero-copy">
+    <p class="kicker">Cloud Engineer · Pune, Maharashtra</p>
+    <h1>Vishal Patil</h1>
+    <p class="lead">BSc Computer Science graduate building hands-on skills in AWS, Linux, Docker and DevOps, and looking for an entry-level cloud role.</p>
+    <div class="cta">
+      <a class="btn primary" href="assets/Vishal-Patil-Resume.pdf" download>Download resume</a>
+      <a class="btn" href="#projects">View projects</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/vishalpatil-devops-aws/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/VishalPatil-DevOps-AWS" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://dev.to/vishal_patil_aws" target="_blank" rel="noopener noreferrer">dev.to</a>
+    </div>
+  </div>
+
+  <figure class="lab" aria-labelledby="lab-title">
+    <figcaption id="lab-title">Try it: the setup from my load balancer and monitoring projects</figcaption>
+    <svg viewBox="0 0 610 280" role="img" aria-label="Diagram: users reach an Application Load Balancer, which sends traffic to two EC2 instances. CloudWatch watches the instances and notifies people through SNS email.">
+      <g class="lines">
+        <path id="l-ua" d="M100 150H140"/>
+        <path id="l-a" d="M230 150C255 150 255 65 280 65"/>
+        <path id="l-b" d="M230 150C255 150 255 235 280 235"/>
+        <path d="M390 65H440"/><path d="M390 235L440 70" class="thin"/>
+        <path id="l-sns" d="M520 90V125"/><path id="l-mail" d="M520 175V210"/>
+      </g>
+      <g class="node" data-n="users"><rect x="10" y="125" width="90" height="50" rx="8"/><text x="55" y="155">Users</text></g>
+      <g class="node" data-n="alb"><rect x="140" y="125" width="90" height="50" rx="8"/><text x="185" y="155">ALB</text></g>
+      <g class="node" id="ec2a"><rect x="280" y="40" width="110" height="50" rx="8"/><text x="335" y="62">EC2-A</text><text x="335" y="79" class="sub" id="ta">healthy</text></g>
+      <g class="node" id="ec2b"><rect x="280" y="210" width="110" height="50" rx="8"/><text x="335" y="232">EC2-B</text><text x="335" y="249" class="sub" id="tb">healthy</text></g>
+      <g class="node" id="cw"><rect x="440" y="40" width="160" height="50" rx="8"/><text x="520" y="62">CloudWatch</text><text x="520" y="79" class="sub" id="tcw">CPU normal</text></g>
+      <g class="node" id="sns"><rect x="440" y="125" width="160" height="50" rx="8"/><text x="520" y="155">SNS</text></g>
+      <g class="node" id="mail"><rect x="440" y="210" width="160" height="50" rx="8"/><text x="520" y="232">Email</text><text x="520" y="249" class="sub" id="tmail">no alerts</text></g>
+    </svg>
+    <div class="lab-ctl">
+      <button class="chip" id="b-stop" aria-pressed="false">Stop EC2-B</button>
+      <button class="chip" id="b-cpu" aria-pressed="false">Spike EC2-A CPU</button>
+      <button class="chip ghost" id="b-reset">Reset</button>
+    </div>
+    <p class="status" id="status" aria-live="polite">All healthy. Traffic is shared across both instances.</p>
+  </figure>
+</section>
+
+<section id="about" class="wrap split">
+  <img class="portrait" src="assets/vishal.jpg" alt="Portrait of Vishal Patil" width="360" height="360" loading="lazy">
+  <div>
+    <h2>About me</h2>
+    <p>I'm an aspiring Cloud Engineer and BSc Computer Science graduate seeking an entry-level opportunity in cloud computing, AWS and DevOps.</p>
+    <p>I want to apply my technical knowledge and hands-on skills in AWS, Linux, Docker and cloud technologies, contribute to real-world projects, and grow as a Cloud/DevOps professional.</p>
+    <h3>Strengths</h3>
+    <ul class="tags"><li>Continuous learning mindset</li><li>Team collaboration</li><li>Self-motivated</li></ul>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <h2>Technical skills</h2>
+  <ul class="skills">
+    <li class="hl">AWS Cloud</li><li class="hl">Docker</li><li class="hl">Linux</li><li class="hl">DevOps fundamentals</li>
+    <li>Networking fundamentals</li><li>Automation</li><li>Git &amp; GitHub</li><li>Bash</li><li>Monitoring</li>
+  </ul>
+</section>
+
+<section id="projects" class="wrap">
+  <h2>Projects</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>CloudWatch &amp; SNS monitoring for EC2 CPU utilization</h3>
+      <p class="stack">Amazon CloudWatch · Amazon SNS · EC2</p>
+      <ul>
+        <li>Configured Amazon CloudWatch to monitor EC2 CPU utilization and created threshold-based alarms for proactive monitoring.</li>
+        <li>Integrated Amazon SNS with CloudWatch to send automated email notifications when CPU usage exceeded the defined threshold.</li>
+        <li>Implemented real-time monitoring and alerting to improve system availability, performance tracking, and incident response in an AWS environment.</li>
+      </ul>
+      <div class="links"><a href="https://lnkd.in/p/dfxFhxMv" target="_blank" rel="noopener noreferrer">Project documentation</a><a href="https://dev.to/vishal_patil_aws" target="_blank" rel="noopener noreferrer">Read on dev.to</a></div>
+    </article>
+    <article class="card">
+      <h3>Static website hosting on Amazon S3</h3>
+      <p class="stack">Amazon S3 · Bucket policies · AWS</p>
+      <ul>
+        <li>Hosted a responsive static website on Amazon S3 by configuring bucket settings, static website hosting, and public access policies.</li>
+        <li>Implemented S3 bucket policies and permissions to securely manage website content and public access.</li>
+        <li>Configured and tested the website endpoint to achieve reliable, scalable, and cost-effective web hosting using AWS S3.</li>
+      </ul>
+      <div class="links"><a href="https://github.com/VishalPatil-DevOps-AWS" target="_blank" rel="noopener noreferrer">GitHub profile</a></div>
+    </article>
+    <article class="card">
+      <h3>Application Load Balancer with EC2 high availability architecture</h3>
+      <p class="stack">AWS ALB · EC2 · Target groups</p>
+      <ul>
+        <li>Configured an AWS Application Load Balancer (ALB) to distribute incoming traffic across multiple EC2 instances using a target group.</li>
+        <li>Implemented health checks and multi-instance architecture to improve application availability and automatically route traffic away from unhealthy instances.</li>
+        <li>Tested load distribution and failover by generating traffic and stopping an EC2 instance, validating high availability and fault tolerance.</li>
+      </ul>
+      <div class="links"><a href="#home">Try the diagram</a><a href="https://github.com/VishalPatil-DevOps-AWS" target="_blank" rel="noopener noreferrer">GitHub profile</a></div>
+    </article>
+  </div>
+</section>
+
+<section id="education" class="wrap">
+  <h2>Education</h2>
+  <ol class="timeline">
+    <li><span class="yr">2026</span><div><h3>Bachelor of Science in Computer Science (B.Sc.)</h3><p>Kavayitri Bahinabai Chaudhari North Maharashtra University, Jalgaon</p><p class="score">Graduated with 8.31 CGPA</p></div></li>
+    <li><span class="yr">2022</span><div><h3>HSC</h3><p>P.S.G.V.P. Mandal, Shahada</p><p class="score">72.50%</p></div></li>
+    <li><span class="yr">2020</span><div><h3>SSC</h3><p>Valmiki Vidyalaya, P. Nagar</p><p class="score">78.80</p></div></li>
+  </ol>
+</section>
+
+<section id="certifications" class="wrap">
+  <h2>Certifications</h2>
+  <div class="grid three">
+    <article class="card slim"><h3>AWS Cloud Quest: Cloud Practitioner</h3><p>Training badge</p></article>
+    <article class="card slim"><h3>AWS Cloud Fundamentals</h3><p>Issued by Jankoti – Igniting Future Ideas</p></article>
+    <article class="card slim"><h3>LFD103: A Beginner's Guide to Linux Kernel Development</h3></article>
+  </div>
+</section>
+
+<section id="contact" class="wrap split contact">
+  <div>
+    <h2>Contact</h2>
+    <p>Open to entry-level Cloud, AWS and DevOps roles. Send me a note and I'll reply by email.</p>
+    <ul class="reach">
+      <li><a href="mailto:vp228459@gmail.com">vp228459@gmail.com</a></li>
+      <li><a href="tel:+917775051230">7775051230</a></li>
+      <li>Pune, Maharashtra</li>
+      <li><a href="https://www.linkedin.com/in/vishalpatil-devops-aws/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/VishalPatil-DevOps-AWS" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </div>
+  <form id="form" novalidate>
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+    <label>Message<textarea name="msg" rows="4" required></textarea></label>
+    <button class="btn primary" type="submit">Open in my email app</button>
+    <p class="status" id="fmsg" aria-live="polite"></p>
+  </form>
+</section>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="yr">2026</span> Vishal Patil</span>
+  <span>#vishalcloudjourney</span>
+  <a href="#home">Back to top</a>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

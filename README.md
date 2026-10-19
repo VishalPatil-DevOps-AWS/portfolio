@@ -29,7 +29,7 @@ Open `index.html` in any browser. (Fonts load from Google Fonts when online; the
      ```bash
      git init
      git add .
-     git commit -m "Add portfolio website"
+     git commit -m "https://vishalpatil-devops-aws.github.io/portfolio/"
      git branch -M main
      git remote add origin https://github.com/VishalPatil-DevOps-AWS/vishal-patil-portfolio.git
      git push -u origin main
